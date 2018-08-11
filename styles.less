@@ -1,0 +1,52 @@
+@rose:rgba(173,113,117,0.77);
+@rose_hell:rgba(173,113,117,0.3);
+@rose_dunkel:rgba(173,113,117,1);
+@grey_light:#f6f6f6;
+@grey:rgb(188,188,188); 
+@fontcolor:rgb(0,0,0);
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color:@fontcolor;
+  *:not(i){
+    font-family: Arial, Helvetica, sans-serif important;
+  }
+  background:white;
+}
+h1,h2,h3,h4{
+  font-family: Arial, Helvetica, sans-serif;
+}
+a{
+  color:@rose_dunkel;
+}
+header{
+  height:15vh;
+  padding:2vh 0;
+  .logo{
+    max-height:11vh;
+  }
+  border-bottom:1px solid @grey;
+}
+footer{
+  display:block;
+  background:@red;
+  &.ui.container{
+    margin:1rem 0 0 0!important;
+  }
+  .footermenu{
+    display:flex!important;
+    justify-content: center;
+    a{
+      color:white!important;
+      padding:1rem;
+      @media (max-width: 767px){
+        padding:1rem 0.5rem;
+      }
+    }
+  }
+}
+#home{
+  #teaser_oben{
+    height:80vh;
+  }
+}
