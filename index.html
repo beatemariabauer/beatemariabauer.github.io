@@ -77,41 +77,110 @@
     <div class="ui three column grid">
       
       <div class="ui column sber">
-        <div class="inner rose hell">
-          
-          <img src="https://res.cloudinary.com/b-coding/image/fetch/f_auto/https://beatemariabauer.github.io/uploads/2018/08/11/icon_coaching.png " />  <p><em>Coaching</em></p>
+        <div class="ui shape">
+          <div class="sides">
+            <div class="active side">
+              <div class="inner rose hell">
+                
+                <img src="https://res.cloudinary.com/b-coding/image/fetch/f_auto/https://beatemariabauer.github.io/uploads/2018/08/11/icon_coaching.png " />  <p><em>Coaching</em></p>
+              </div>
+            </div>
+            <div class="side back">
+              <div class="inner rose">
+                
+                <img src="https://res.cloudinary.com/b-coding/image/fetch/f_auto/https://beatemariabauer.github.io/uploads/2018/08/11/icon_coaching.png " />  <p><em>Coaching</em></p><p>klare Worte finden Hindernisse aus dem Weg räumen und neue Türen öffnen Blickwinkel ändern</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       
       <div class="ui column sber">
-        <div class="inner grau">
-           <p>ZEIT<br>für neue<br>IMPULSE</p>
+        <div class="ui shape">
+          <div class="sides">
+            <div class="active side">
+              <div class="inner grau">
+                 <p>ZEIT<br>für neue<br>IMPULSE</p>
+              </div>
+            </div>
+            <div class="side back">
+              <div class="inner grau">
+                 <p><strong>RUHE</strong></p><p><strong>&amp;</strong></p><p><strong>BEWEGUNG</strong></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       
       <div class="ui column sber">
-        <div class="inner rose hell">
-          
-          <img src="https://res.cloudinary.com/b-coding/image/fetch/f_auto/https://beatemariabauer.github.io/uploads/2018/08/11/icon_mediation.png " />  <p><em>Mediation</em></p>
+        <div class="ui shape">
+          <div class="sides">
+            <div class="active side">
+              <div class="inner rose hell">
+                
+                <img src="https://res.cloudinary.com/b-coding/image/fetch/f_auto/https://beatemariabauer.github.io/uploads/2018/08/11/icon_mediation.png " />  <p><em>Mediation</em></p>
+              </div>
+            </div>
+            <div class="side back">
+              <div class="inner rose hell">
+                
+                <img src="https://res.cloudinary.com/b-coding/image/fetch/f_auto/https://beatemariabauer.github.io/uploads/2018/08/11/icon_mediation.png " />  <p><em>Mediation</em></p><p>Sich und dem anderen eigene Standpunkte klarmachen<br>Geben und Nehmen<br>tragfähige Lösungen finden<br>win-win-win</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       
       <div class="ui column sber">
-        <div class="inner grau">
-           <p>WENDEPUNKTE<br>begleiten, Ihr <br>POTENZIAL<br>entdecken</p>
+        <div class="ui shape">
+          <div class="sides">
+            <div class="active side">
+              <div class="inner grau">
+                 <p>WENDEPUNKTE<br>begleiten, Ihr <br>POTENZIAL<br>entdecken</p>
+              </div>
+            </div>
+            <div class="side back">
+              <div class="inner grau">
+                 <p><strong>BEGLEITUNG</strong></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       
       <div class="ui column sber">
-        <div class="inner rose">
-          
-          <img src="https://res.cloudinary.com/b-coding/image/fetch/f_auto/https://beatemariabauer.github.io/uploads/2018/08/11/icon_tanz.png " />  <p><em>Tanz</em></p>
+        <div class="ui shape">
+          <div class="sides">
+            <div class="active side">
+              <div class="inner rose">
+                
+                <img src="https://res.cloudinary.com/b-coding/image/fetch/f_auto/https://beatemariabauer.github.io/uploads/2018/08/11/icon_tanz.png " />  <p><em>Tanz</em></p>
+              </div>
+            </div>
+            <div class="side back">
+              <div class="inner rose dunkel">
+                
+                <img src="https://res.cloudinary.com/b-coding/image/fetch/f_auto/https://beatemariabauer.github.io/uploads/2018/08/11/icon_tanz.png " />  <p><em>Tanz</em></p><p>Stille erleben selbst wirksam werden die eigene Zukunft kreieren</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       
       <div class="ui column sber">
-        <div class="inner grau">
-           <p>eine gemeinsame <br>LANDKARTE <br>zeichnen</p>
+        <div class="ui shape">
+          <div class="sides">
+            <div class="active side">
+              <div class="inner grau">
+                 <p>eine gemeinsame <br>LANDKARTE <br>zeichnen</p>
+              </div>
+            </div>
+            <div class="side back">
+              <div class="inner grau">
+                 <p><strong>KONFLIKT-</strong></p><p><strong>PRÄVENTION</strong></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       
@@ -192,6 +261,12 @@
           $('header').addClass('scrolled');
           $('.logo').addClass('scrolled');
         }
+      });
+      $('.shape').mouseenter(function () {
+        $(this).shape('flip back');
+      });
+      $('.shape').mouseleave(function () {
+        $(this).shape('flip over');
       });
     });
   </script>
