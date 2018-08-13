@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://beatemariabauer.github.io/styles.css">
   <link rel="shortcut icon" href="https://beatemariabauer.github.io/favicon.png" type="image/x-icon"> <meta name="description" content="">
 <meta name="og:title" content="Datenschutz">
+  <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/49084558-7f89-4650-abc9-d0902b866438.css" />
   <script type="text/javascript" src="https://beatemariabauer.github.io/lib/jquery.min.js"></script>
 </head>
 
@@ -22,8 +23,28 @@
     <a href="/" id="logolink">
       <img class="logo" src="https://res.cloudinary.com/b-coding/image/fetch/c_scale,h_200,f_auto/https://beatemariabauer.github.io/uploads/2018/08/11/logo.png" />
     </a>
+    <div id="headermenu">
+      
+      <a class="headermenuitem "
+        href="/" title="Home">Home</a>
+      
+      <a class="headermenuitem "
+        href="/uber-mich/" title="Über mich">Über mich</a>
+      
+      <a class="headermenuitem "
+        href="/coaching/" title="Coaching">Coaching</a>
+      
+      <a class="headermenuitem "
+        href="/mediation/" title="Mediation">Mediation</a>
+      
+      <a class="headermenuitem "
+        href="/tanz/" title="Tanz">Tanz</a>
+      
+      <a class="headermenuitem "
+        href="/kontakt/" title="Kontakt">Kontakt</a>
+      
+    </div>
   </div>
-  
 </header>
   <main role="main">
     
@@ -270,7 +291,7 @@
   </main>
   
 <footer class="ui container fluid ">
-  <div class="footermenu ui container">
+  <div class="footermenu">
      
     <a href="/datenschutz/" title="Datenschutz">Datenschutz</a>
     
@@ -279,34 +300,23 @@
     <a href="/haftungsausschluss/" title="Haftungsausschluss">Haftungsausschluss</a>
     
   </div>
+  <a href="http://elvirabeck-design.de" target="_blank">elvira.beck | design</a>
 </footer>
 
   <script type="text/javascript" src="https://beatemariabauer.github.io/lib/semantic.min.js"></script>
-  <script type="text/javascript" src="https://beatemariabauer.github.io/lib/slippry.min.js"></script>
-  <link rel="stylesheet" href="https://beatemariabauer.github.io/lib/slippry.min.css">
   <script type="text/javascript">
     $(function () {
-      $('#slider').slippry({
-        
-        slippryWrapper: '<div class="sy-box topslider" />', 
-        elements: 'li', 
-
-        
-        adaptiveHeight: false, 
-        captions: false,
-        loop: true,
-        
-        pager: false,
-        start: 2,
-        
-        slideMargin: 0, 
-        useCSS: true,
-        transition: 'horizontal',
-
-        
-        autoDirection: 'next'
+      $(window).scroll(function () {
+        var pos = window.pageYOffset || document.documentElement.scrollTop;
+        if (pos === 0) {
+          $('header').removeClass('scrolled');
+          $('.logo').removeClass('scrolled');
+        }
+        if (pos > 0 && !$('header').hasClass('scrolled')) {
+          $('header').addClass('scrolled');
+          $('.logo').addClass('scrolled');
+        }
       });
-      $('.ui.embed').embed();
     });
   </script>
 </body>
