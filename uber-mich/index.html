@@ -51,8 +51,8 @@
 <div id="about">
   <div class="ui container fluid" style="background:#f6f6f6">
     <div class="ui container" id="oben">
-      <div class="ui two column grid">
-        <div class="ui column" style="background:url(https://res.cloudinary.com/b-coding/image/fetch/c_scale,f_auto,h_800/https://beatemariabauer.github.io/uploads/2018/09/04/128_verlauf.jpg) right top no-repeat #f6f6f6; background-size:cover"></div>
+      <div class="ui two column grid stackable">
+        <div class="ui column imgcol" style="background:url(https://res.cloudinary.com/b-coding/image/fetch/c_scale,f_auto,h_800/https://beatemariabauer.github.io/uploads/2018/09/04/128_verlauf.jpg) right top no-repeat #f6f6f6; background-size:cover"></div>
         <div class="ui column">
           <h1>Über mich</h1>
           <div class="content_rechts">
@@ -62,12 +62,31 @@
       </div>
     </div>
   </div>
-  <div class="ui container fluid" style="background:url(https://res.cloudinary.com/b-coding/image/fetch/c_scale,f_auto,w_2000/https://beatemariabauer.github.io/uploads/2018/08/11/Fotolia_47657161_M.jpg) right top no-repeat #f6f6f6; background-size:cover">
+  <div class="ui container fluid" style="background:url(https://res.cloudinary.com/b-coding/image/fetch/c_scale,f_auto,w_2000/https://beatemariabauer.github.io/uploads/2018/08/11/Fotolia_47657161_M.jpg) center center no-repeat #f6f6f6; background-size:cover">
     <div class="ui container" id="zitat">
-      <p>„Ich will die Essenz.<br>Meine Seele ist in Eile.“</p>
+      <blockquote>
+        <p>„Ich will die Essenz.<br>Meine Seele ist in Eile.“</p>
+      </blockquote>
+      <div class="quelle">
+        freie Übersetzung des Dichters Mario de Andrale
+      </div>
     </div>
   </div>
-
+  <div class="ui container subbereiche">
+    <div class="ui two column stackable grid">
+      
+      <div class="ui column">
+        <h2>Vorträge &amp; Kurse</h2>
+        <p>Fagen Sie mich einfach nach den nächsten Terminen oder vereinbaren Sie einen individuellen Termin in Ihrer Einrichtung:</p><ul><li><p>Mediation – Türöffner für eine neue Unternehmenskultur</p></li><li><p>Mitarbeiterfluktuation und hohen Krankenstand durch </p></li><li><p>erfolgenreiches Konfliktmanagement begegnen</p></li><li><p>Was ist Mediation? Kleine Friedensarbeit im privaten Bereich mit großer Wirkung</p></li></ul>
+      </div>
+      
+      <div class="ui column">
+        <h2>Kompetenzen</h2>
+        <ul><li><p>Ganzheitliche Gesundheitstrainerin</p></li><li><p>Mediatorin</p></li><li><p>Konfiktcoach</p></li><li><p>NLP Master</p></li><li><p>Wirtschafsmediatorin (in Supervision)</p></li><li><p>Dozentin für Meditaton des Tanzes</p></li></ul>
+      </div>
+      
+    </div>
+  </div>
 </div>
 
   </main>
@@ -102,6 +121,7 @@
       $('.shape').click(function () {
         $(this).shape('flip back');
       });
+      $('.ui.embed').embed();
     });
   </script>
 </body>

@@ -48,11 +48,58 @@
 </header>
   <main role="main">
     
-<div class="subpage">
-  <div class="ui container standard">
-    <h1>Kontakt</h1>
-    <div class="content">
-      
+<div class="sub kontakt">
+  <div class="ui container fluid" style="background:url(https://res.cloudinary.com/b-coding/image/fetch/c_scale,f_auto,w_2000/https://beatemariabauer.github.io/uploads/2018/08/13/footer_pic.jpg) center center no-repeat #f6f6f6; background-size:cover">
+    <div class="ui two column stackable grid mobile reversed">
+      <div class="ui column map">
+        <div class="ui 4:3 embed" data-url="https://www.openstreetmap.org/export/embed.html?bbox=11.862530708312988%2C48.91358765320997%2C11.885704994201662%2C48.92564332915256&amp;amp;layer=mapnik&amp;amp;marker=48.919607868464254%2C11.874111481010914" data-icon="zoom in">
+        </div>
+      </div>
+      <div class="ui column content" id="cont">
+        <h1>Kontakt</h1>
+        <ul class="kdata">
+          
+          <li>
+            <i class="map marker alternate icon"></i>
+            <div><p><strong>Beate Maria Bauer</strong></p><p>Matthias-Kraus-Gasse 17<br>93309 Kelheim</p></div>
+          </li>
+          
+          <li>
+            <i class="phone icon"></i>
+            <div><p>0 12 34 - 56 78 91 0</p></div>
+          </li>
+          
+          <li>
+            <i class="mobile alternate icon"></i>
+            <div><p>0 171 - 12 34 56 7</p></div>
+          </li>
+          
+          <li>
+            <i class="envelope outline icon"></i>
+            <div><p><a href="mailto:bmb@beatemariabauer.de" title="">bmb@beatemariabauer.de</a></p></div>
+          </li>
+          
+        </ul>
+        <div class="txt">
+          <p>Ich freue mich auf Ihre Anfrage und werde diese schnellstmöglichst beantworten, Gerne stehe ich Ihnen auch persönlich für einen ersten Beratungstermin zur Verfügung.</p>
+        </div>
+        <div class="kontform">
+  <form class="ui form">
+    <div class="two fields">
+      <div class="field">
+        <input type="text" name="name" placeholder="Name Vorname">
+      </div>
+      <div class="field">
+        <input type="text" name="email" placeholder="Email">
+      </div>
+    </div>
+    <div class="field">
+      <textarea placeholder="Ihre Nachricht"></textarea>
+    </div>
+    <button class="ui button" type="submit">Anfrage senden</button>
+  </form>
+</div>
+      </div>
     </div>
   </div>
 </div>
@@ -89,6 +136,7 @@
       $('.shape').click(function () {
         $(this).shape('flip back');
       });
+      $('.ui.embed').embed();
     });
   </script>
 </body>

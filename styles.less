@@ -39,6 +39,11 @@ a{
 main{
   padding-top:15vh;
 }
+@media (max-width: 767px){
+  .ui.container.fluid{
+    margin:0!important;
+  }
+}
 header{
   > .container{
     position:relative;
@@ -60,6 +65,9 @@ header{
       transition-duration: 0.5s;
       transition-timing-function: ease-in-out;
     }
+    @media (max-width: 767px){
+      max-height:60px;
+    }
   }
   border-bottom:1px solid @grey;
   -webkit-box-shadow: 0px 0px 36px 0px rgba(122,122,122,1);
@@ -80,10 +88,14 @@ header{
     transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
+    @media (max-width: 767px){
+      height:10vh;
+    }
   }
   #headermenu{
     display:flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     width:100%;
     .headermenuitem{
       text-transform: uppercase;
@@ -103,6 +115,12 @@ header{
       &:last-child:after{
         content:''; 
       }
+      @media (max-width: 767px){
+        &:after{
+          display:none;
+        }
+        margin-bottom:0.25rem;  
+      }
     }
   }
 }
@@ -112,18 +130,32 @@ footer{
   padding:0 2rem;
   justify-content: space-between;
   background:@rose_dunkel;
+  @media (max-width: 767px){
+    padding:0 1rem;
+    flex-wrap: wrap;
+  }
   > a{
     color:white!important;
     padding:1rem 0 1rem 1rem;
+    @media (max-width: 767px){
+      padding:1rem 0;
+    }
   }
   .footermenu{
     display:flex!important;
     justify-content: left;
+    @media (max-width: 767px){
+      flex-wrap: wrap;
+    }
     a{
       color:white!important;
       padding:1rem 0 1rem 1rem;
       @media (max-width: 767px){
-        padding:1rem 0.5rem;
+        padding:0.25rem 0.5rem 0.25rem 0 ;
+        line-height:1.2rem;
+        &:after{
+          display:none;
+        }
       }
       &:after{
         content:'|';
@@ -137,13 +169,162 @@ footer{
     }
   }
 }
+.subbereiche{
+  h2{
+    margin-bottom:2rem;
+  }
+  ul{
+    padding:0;
+    li{
+      list-style-type: none;
+      padding-left:24px;
+      color:@rose_dunkel;
+      font-size:1.2rem;
+      font-weight:bold;
+      line-height:1.8rem;
+      margin-bottom:0.5rem;
+      background:url('/listicon.png')left 0.3rem no-repeat;
+    }
+  }
+}
+.sub{
+  &.kontakt{
+    h1{
+      margin-bottom:4rem;
+    }
+    .embed{
+      height:100%;
+      width:100%;
+    }
+    .content{
+      padding:0 4rem 2rem 4rem!important;
+    }
+    .txt{
+      padding:2rem 0;
+    }
+    .kdata{
+      padding:0;
+    }
+    @media (max-width: 767px){
+      #cont{
+        padding:1rem!important;
+      }
+    }
+  }
+  &.services{
+    padding-bottom:2rem;
+    h1{
+      margin:0!important;
+      padding:8vh 3rem 2rem 3rem;
+      text-align:left;
+      display:inline-block;
+      background-size:contain;
+      font-size:8rem;
+      @media (max-width: 767px){
+        font-size:4rem;
+      }
+    }
+    .slogan{
+      background:@grey_light;
+      .container{
+        padding:2rem 0;
+        color:@rose;
+        text-align:center;
+        font-size:1.1rem;
+        p{
+          line-height:2rem;
+        }
+      }
+    }
+    .kbutton{
+      color:white;
+      background:@rose;
+      padding:1rem 2rem;
+      border-radius:0.5rem;
+    }
+    .zk{
+      background:@grey_light;
+      padding:2rem 0;
+      h2{
+        margin:0 0 3rem 0!important;
+      }
+      .zkc{
+        padding:15rem 1rem 1rem 0;
+        position:relative;
+        h5{
+          color:@rose;
+          background:white;
+          display:inline-block;
+          text-align:left;
+          padding:1rem 2rem;
+          min-width:80%;
+          font-size:2rem; 
+          p{
+            font-family: Arial, Helvetica, sans-serif important;
+          }
+        }
+      }
+    }
+    #icontxt{
+      padding:4rem 0;
+      .icon_text_links{
+        background:@rose_dunkel;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        padding:2rem;
+        img{
+          max-width:33%;
+          margin-bottom:2rem;
+        }
+        p{
+          color:white;
+          font-family: 'Born Ready W00 Regular',Arial, Helvetica, sans-serif;
+          font-size:3rem;
+        }
+      }
+      .content_rechts{
+        strong{
+          font-weight:bold;
+          color:@rose_dunkel;
+          font-size:1.1rem;
+        }
+        ul{
+          padding:0;
+          li{
+            margin-left:1rem;
+          }
+        }
+      }
+    }
+  }
+}
 #about{
-  padding-bottom:1rem;
+  padding-bottom:2rem;
+  .imgcol{
+    min-height:150px;
+  }
   h1{
     text-align:left;
     font-size:4rem;
     display:inline-block;
     background-size:contain;
+    @media (max-width: 767px){
+      margin-top:0!important; 
+    }
+  }
+  #oben{
+    &.ui.container{
+      margin:0!important;
+      @media (max-width: 767px){
+        .ui.grid{
+          .ui.column{
+            padding:1rem!important;
+          }
+        }
+      }
+    }
   }
   .content_rechts{
     padding-top:2rem;
@@ -161,6 +342,43 @@ footer{
       }
     }
   }
+  #zitat{
+    margin-top:1rem;
+    position:relative;
+    blockquote{
+      text-align:center;
+      color:white;
+      font-size:5rem;
+      padding:3rem 0;
+      margin:0;
+      font-family: 'Born Ready W00 Regular',Arial, Helvetica, sans-serif; 
+    }
+    .quelle{
+      position:absolute;
+      right:0;
+      bottom:1rem;
+      color:white;
+      font-style:italic;
+    }
+  }
+}
+.kdata{
+  margin:0;
+  padding:0 0 0 4rem;
+  columns:2;
+  column-gap: 2rem;
+  li{
+    color:@rose;
+    line-height:1.5rem; 
+    strong{
+      font-weight:bold;
+    }
+    display:flex;
+    justify-content: left;
+    i{
+      margin-right:1rem;
+    }
+  }
 }
 #home{
   #teaser_oben{
@@ -171,6 +389,10 @@ footer{
       position:absolute;
       right:-100px;
       top:20vh;
+      @media (max-width: 767px){
+        right:-60px;
+        top:0;
+      }
     }
   }
   #intro{
@@ -189,28 +411,19 @@ footer{
         border-radius: 0.75rem;
       }
     }
+    @media (max-width: 767px){
+      font-size:1.0rem;
+      line-height:1.5rem;
+    }
   }
   #kontakt{
     padding-bottom:2rem;
     .ui.grid{
       margin-top:2rem;
     }
-    .kdata{
-      margin:0;
-      padding:0 0 0 4rem;
-      columns:2;
-      column-gap: 2rem;
-      li{
-        color:@rose;
-        line-height:1.5rem; 
-        strong{
-          font-weight:bold;
-        }
-        display:flex;
-        justify-content: left;
-        i{
-          margin-right:1rem;
-        }
+    @media (max-width: 767px){
+      .kdata{
+        padding:0;  
       }
     }
   }
