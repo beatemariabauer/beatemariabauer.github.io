@@ -19,10 +19,43 @@
 <body>
    
 <header>
-  <div class="ui container">
-    <a href="/" id="logolink">
-      <img class="logo" src="https://res.cloudinary.com/b-coding/image/fetch/c_scale,h_200,f_auto/https://beatemariabauer.github.io/uploads/2018/08/11/logo.png" />
-    </a>
+  <div id="desktopnav">
+    <div class="ui container">
+      <a href="/" id="logolink">
+        <img class="logo" src="https://res.cloudinary.com/b-coding/image/fetch/c_scale,h_200,f_auto/https://beatemariabauer.github.io/uploads/2018/08/11/logo.png" />
+      </a>
+      <div id="headermenu">
+        
+        <a class="headermenuitem "
+          href="/" title="Home">Home</a>
+        
+        <a class="headermenuitem "
+          href="/uber-mich/" title="Über mich">Über mich</a>
+        
+        <a class="headermenuitem "
+          href="/coaching/" title="Coaching">Coaching</a>
+        
+        <a class="headermenuitem "
+          href="/mediation/" title="Mediation">Mediation</a>
+        
+        <a class="headermenuitem "
+          href="/tanz/" title="Tanz">Tanz</a>
+        
+        <a class="headermenuitem  active"
+          href="/kontakt/" title="Kontakt">Kontakt</a>
+        
+      </div>
+    </div>
+  </div>
+  <div id="mobilenav">
+    <div class="ui container">
+      <a href="/" id="logolink">
+        <img class="logo" src="https://res.cloudinary.com/b-coding/image/fetch/c_scale,h_200,f_auto/https://beatemariabauer.github.io/uploads/2018/08/11/logo.png" />
+      </a>
+      <div class="ui basic icon button" id="mobilemenutoggle">
+        <i class="bars icon"></i>
+      </div>
+    </div>
     <div id="headermenu">
       
       <a class="headermenuitem "
@@ -132,6 +165,17 @@
         $(this).shape('flip back');
       });
       $('.ui.embed').embed();
+      $('#mobilemenutoggle').click(() => {
+        if ($('#mobilenav #headermenu').hasClass('vis')) {
+          $('#mobilenav #headermenu').removeClass('vis');
+          $('#mobilemenutoggle i').removeClass('chevron up');
+          $('#mobilemenutoggle i').addClass('bars');
+        } else {
+          $('#mobilenav #headermenu').addClass('vis');
+          $('#mobilemenutoggle i').addClass('chevron up');
+          $('#mobilemenutoggle i').removeClass('bars');
+        }
+      });
     });
   </script>
 </body>
