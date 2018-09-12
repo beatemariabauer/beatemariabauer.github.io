@@ -14,7 +14,7 @@
 <meta name="og:title" content="Mediation">
   <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/49084558-7f89-4650-abc9-d0902b866438.css" />
   <script type="text/javascript" src="https://beatemariabauer.de/lib/jquery.min.js"></script>
-  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src='https://www.google.com/recaptcha/api.js' async defer></script>
 </head>
 
 <body>
@@ -191,8 +191,38 @@
           $('#mobilemenutoggle i').removeClass('bars');
         }
       });
-      
-
+      $('#kform')
+        .form({
+          fields: {
+            name: {
+              identifier: 'name',
+              rules: [
+                {
+                  type: 'empty',
+                  prompt: 'Bitte geben Sie Ihren Namen an'
+                }
+              ]
+            },
+            email: {
+              identifier: 'email',
+              rules: [
+                {
+                  type: 'email',
+                  prompt: 'Bitte geben Sie eine gültige Emailadresse an.'
+                }
+              ]
+            },
+            message: {
+              identifier: 'message',
+              rules: [
+                {
+                  type: 'minLength[5]',
+                  prompt: 'Bitte geben Sie eine Nachricht an.'
+                }
+              ]
+            }
+          }
+        });
     });
   </script>
 </body>
