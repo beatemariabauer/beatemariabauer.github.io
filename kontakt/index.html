@@ -14,6 +14,7 @@
 <meta name="og:title" content="Kontakt">
   <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/49084558-7f89-4650-abc9-d0902b866438.css" />
   <script type="text/javascript" src="https://beatemariabauer.de/lib/jquery.min.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -112,7 +113,7 @@
           <p>Ich freue mich auf Ihre Anfrage und werde diese schnellstmöglichst beantworten, Gerne stehe ich Ihnen auch persönlich für einen ersten Beratungstermin zur Verfügung.</p>
         </div>
         <div class="kontform">
-  <form class="ui form">
+  <form class="ui form" id="kform">
     <div class="two fields">
       <div class="field">
         <input type="text" name="name" placeholder="Name Vorname">
@@ -124,6 +125,7 @@
     <div class="field">
       <textarea placeholder="Ihre Nachricht"></textarea>
     </div>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <button class="ui button" type="submit">Anfrage senden</button>
   </form>
 </div>
@@ -176,6 +178,8 @@
           $('#mobilemenutoggle i').removeClass('bars');
         }
       });
+      
+
     });
   </script>
 </body>
