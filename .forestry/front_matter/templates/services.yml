@@ -1,0 +1,92 @@
+---
+label: Services
+hide_body: true
+fields:
+- type: file
+  name: header_bild
+  label: Header Bild
+- type: textarea
+  name: intro
+  label: Intro
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
+- type: field_group
+  name: icon_text_links
+  label: Icon Text links
+  fields:
+  - type: file
+    name: icon
+    label: Icon
+    description: optional
+  - type: textarea
+    name: content
+    label: Content
+    config:
+      wysiwyg: true
+      schema:
+        format: html-blocks
+- type: textarea
+  name: content_rechts
+  label: Content rechts
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
+- type: field_group
+  name: zielgruppen
+  label: Zielgruppen
+  fields:
+  - type: text
+    name: titel
+    label: Titel
+  - type: field_group_list
+    name: zielgruppe
+    label: Zielgruppe
+    fields:
+    - type: textarea
+      name: titel
+      label: Titel
+      config:
+        wysiwyg: true
+        schema:
+          format: html-blocks
+    - type: file
+      name: bild
+      label: Bild
+- type: field_group
+  name: conten_unten
+  label: Conten unten
+  fields:
+  - type: text
+    name: titel
+    label: Titel
+  - type: textarea
+    name: content
+    label: Content
+    config:
+      wysiwyg: true
+      schema:
+        format: html-blocks
+  - type: boolean
+    name: linkbutton_
+    label: Linkbutton?
+  - type: text
+    name: linkbeschriftung
+    label: Linkbeschriftung
+  - type: select
+    name: link
+    config:
+      source:
+        type: pages
+        section: pages
+    label: Link
+- type: text
+  name: seo_description
+  label: SEO Description
+pages:
+- content/coaching.md
+- content/ferienwohnung.md
+- content/mediation.md
+- content/tanz.md
