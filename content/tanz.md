@@ -14,7 +14,7 @@ linkbeschriftung = "Termin anfragen"
 linkbutton_ = true
 titel = ""
 [icon_text_links]
-content = "<p>Tanz</p>"
+content = "<p>Gegenwart</p>"
 icon = "/uploads/2018/08/11/icon_tanz.png"
 [menu.main]
 name = "Gegenwart"
