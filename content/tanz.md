@@ -1,18 +1,18 @@
 +++
-content_rechts = "<p>Seit 2005 bin ich als Gesundheitstrainerin und Cranio-Sacral-Therapeutin tätig und unterrichtete Autogenes Training/Progressive Muskelrelaxation und Kreistanz. Eine zuvor absolvierte Ausbildung zur Heilpraktikerin für Psychotherapie war das Fundament dieser Entscheidung.</p><p>Die Begegnung mit der Meditation des Tanzes vor circa zehn Jahren veränderte meine Arbeit grundlegend. Der Tanz bekam eine völlig neue Tiefe und Ausdrucksmöglichkeit, der Kreis bot einen unendlichen Raum zur eigenen Sinnfindung und gleichzeitigen Körperschulung. </p><p>Durch die Choreographien von Friedel Kloke-Eibel finden die Klänge der Musik im Körper Ausdruck und wirken heilend auf Seele und Geist.</p><p>In den Jahren 2013 bis 2015 absolvierte ich die Ausbildung am Institut „Meditation des Tanzes – Sacred Dance“. Ich bin Mitglied im Fachverband Meditation des Tanzes.</p>"
+content_rechts = "<p class=\"MsoNormal\">Mein Angebot richtet sich jeweils nach den Bedürfnissen der Menschen – individuell, kurzfristig und Weg unterstützend:</p><p class=\"MsoNormal\">Miteinander Schweigen in Situationen in denen Wörter überflüssig werden. Ein sitzendes und schweigendes Gegenüber kann als Halt empfunden werden und auch als Trostspender oder Spiegel. Je nachdem welche Situation das Leben gerade bietet.</p><p class=\"MsoNormal\">Arm-, Hand- und Fußmassagen mit Aromaölen unterstützen Lebens- und Abschiedsprozesse, werden als angenehm empfunden und sind ein Geschenk an den jeweiligen Augenblick.</p><p class=\"MsoNormal\">Die Cranio-sacrale Berührung des Körpers kann die Selbstheilungskräfte aktivieren, als heilend empfunden werden und zu tiefer Entspannung führen.</p><p class=\"MsoNormal\">Die Massage der Füße dehnt die Fußmuskulatur, fördert Standfestigkeit und Körpergefühl. Diese Massage kann ebenfalls die Selbstheilungskräfte aktivieren und Entspannungszustände herbeiführen.</p><p class=\"MsoNormal\">Meditation des Tanzes als ganztägiges Angebot für Gruppen und als Baustein in der Gemeinschaftsbildung.</p><p class=\"MsoNormal\">Jedes dieser Angebote ist für Einzelpersonen und auch für Gruppen geeignet, als Teil eines Kreativ-Workshops oder als Tagesseminar.</p><p class=\"MsoNormal\">Jedes dieser Angebote richtet sich an alle Menschen – zu Leb- und Sterbezeiten.</p>"
 date = "2018-08-11T11:33:16+02:00"
 einleitung = ""
 header_bild = "/uploads/2018/09/10/tanz.jpg"
-intro = "<p><em>Aus einer übenden und erlebten Gegenwärtigkeit heraus Kraft schöpfen, um sich den Alltag neu zu stellen.</em></p>"
+intro = "<p class=\"MsoNormal\"><em>Die Unvorhersehbarkeit des Lebens annehmen</em></p>"
 layout = "services"
 seo_description = ""
 title = "Tanz"
 [conten_unten]
-content = "<p>Hier stehen die nächsten Termine oder vereinbaren Sie ein individuelles Tanzseminar in ihrer Stadt:</p><ul><li><p>Jahresprogramm 2019</p></li><li><p>Tanztag 25. November 2018 in Kelheim</p></li><li><p>Tanzabende in Kelheim - montags</p></li><li><p>Tanznachmittage im Frühjahr 2019 in Kelheim</p></li><li><p>Tanzwochenende 24.-26. Mai 2019 im Haus Werdenfels  bei Nittendorf</p></li><li><p>Tanztage im 19.-22. September 2019 in Passau</p></li><li><p>Tanzwochenende im 29.-1. November/Dezember in Regenstauf</p></li></p></ul>"
+content = "<p></p>"
 link = "kontakt.md"
 linkbeschriftung = "Termin anfragen"
 linkbutton_ = true
-titel = "Kurse"
+titel = ""
 [icon_text_links]
 content = "<p>Tanz</p>"
 icon = "/uploads/2018/08/11/icon_tanz.png"
