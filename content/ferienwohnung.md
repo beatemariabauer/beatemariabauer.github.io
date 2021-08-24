@@ -27,7 +27,7 @@ bild = "/uploads/2021/08/24/wohnung10.jpeg"
 titel = "<p>Balkon</p>"
 [[zielgruppen.zielgruppe]]
 bild = "/uploads/2021/08/24/wohnung13.jpeg"
-titel = ""
+titel = "<p>zauberhafte Stimmung</p>"
 [[zielgruppen.zielgruppe]]
 bild = "/uploads/2021/08/24/wohnung6.jpeg"
 titel = ""
