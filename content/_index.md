@@ -21,7 +21,7 @@ intro:
   link: uber-mich.md
   link_beschriftung: Mehr lesen
 mediation_und_training:
-  titel: Mediation & Training
+  titel: Lebensräume gestalten
   content: "<p>Wieder in die Gegenwart finden, sich neuen Impulsen hingeben, sich
     herausnehmen aus dem täglich fordernden Getriebe, sei es für Sie als Unternehmerin
     oder als Privatperson. Den eigenen Mut wieder entdecken und die Zukunft neu erdenken,
@@ -34,7 +34,7 @@ mediation_und_training:
     hintergrundfarbe_ruckseite: rose
     content_ruckseite: "<p><em>Coaching</em></p><p>klare Worte finden <br> Hindernisse
       aus dem Weg räumen <br> Blickwinkel ändern</p>"
-  - content: "<p>ZEIT<br>für neue<br>IMPULSE</p>"
+  - content: "<p>neue Themen <br>einladen</p>"
     hintergrundfarbe: grau
     content_ruckseite: "<p><strong>RUHE</strong></p><p><strong>&amp;</strong></p><p><strong>STILLE</strong></p>"
     hintergrundfarbe_ruckseite: grau
