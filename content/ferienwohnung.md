@@ -15,7 +15,7 @@ titel = ""
 content = "<p>Auszeit</p>"
 icon = "/uploads/2019/10/02/icon_auszeit.png"
 [menu.main]
-name = "Wohnung"
+name = "Auszeit"
 weight = 7
 [zielgruppen]
 titel = "Bilder"
