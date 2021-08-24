@@ -21,7 +21,7 @@ weight = 7
 titel = "Bilder"
 [[zielgruppen.zielgruppe]]
 bild = "/uploads/2021/08/24/wohnung11.jpeg"
-titel = ""
+titel = "<p>Schlafraum</p>"
 [[zielgruppen.zielgruppe]]
 bild = "/uploads/2021/08/24/wohnung10.jpeg"
 titel = ""
