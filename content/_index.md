@@ -8,7 +8,7 @@ seo_description: Beate Maria Bauer -  Ich begleite Menschen, Teams und Unternehm
   Raum. Ich unterrichte Tanz im ostbayerischen Raum (Landshut, Regensburg, Passau,
   Kelheim, Ingolstadt). Meditation des Tanzes, Training und Mediation
 teaser_oben:
-  bild: "/uploads/2018/08/11/053cut.jpg"
+  bild: "/uploads/2021/08/24/beate_maria-bauer_home.jpg"
   logo: "/uploads/2018/08/11/logo.png"
 intro:
   content: "<p><strong>Begegnung in Würde gestalten - auf dem Weg zum WESEN-tlichen!
