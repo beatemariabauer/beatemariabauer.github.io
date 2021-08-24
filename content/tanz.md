@@ -17,6 +17,7 @@ titel = "Kurse"
 content = "<p>Tanz</p>"
 icon = "/uploads/2018/08/11/icon_tanz.png"
 [menu.main]
+name = "Gegenwart"
 weight = 5
 [zielgruppen]
 titel = ""
