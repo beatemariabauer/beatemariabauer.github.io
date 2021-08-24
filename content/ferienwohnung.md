@@ -20,13 +20,13 @@ weight = 7
 [zielgruppen]
 titel = "Bilder"
 [[zielgruppen.zielgruppe]]
-bild = "/uploads/2021/08/24/wohnung13.jpeg"
-titel = ""
-[[zielgruppen.zielgruppe]]
 bild = "/uploads/2021/08/24/wohnung11.jpeg"
 titel = ""
 [[zielgruppen.zielgruppe]]
 bild = "/uploads/2021/08/24/wohnung10.jpeg"
+titel = ""
+[[zielgruppen.zielgruppe]]
+bild = "/uploads/2021/08/24/wohnung13.jpeg"
 titel = ""
 [[zielgruppen.zielgruppe]]
 bild = "/uploads/2021/08/24/wohnung6.jpeg"
